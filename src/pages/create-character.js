@@ -116,7 +116,7 @@ export default function CreateCharacter() {
       });
 
       // Redirigir al personaje creado
-      router.push(`/character/${characterId}`);
+      router.push(`/character/${encodeURIComponent(characterId)}`);
     } catch (err) {
       console.error("Error al crear el personaje:", err);
       setError("Error al crear el personaje. Por favor, intenta nuevamente.");
