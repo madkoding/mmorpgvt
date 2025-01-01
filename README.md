@@ -78,14 +78,6 @@ Sigue estos pasos para instalar el proyecto en tu sistema:
 
    Esto iniciará el servidor de desarrollo en `http://localhost:3000`.
 
-## Despliegue
-
-Este proyecto está optimizado para ejecutarse en Vercel. Para desplegar:
-
-1. Conecta tu repositorio de GitHub con tu cuenta de Vercel.
-2. Asegúrate de configurar las variables de entorno necesarias en el panel de Vercel.
-3. Haz un push a la rama principal (`main`) y Vercel construirá y desplegará automáticamente tu aplicación.
-
 
 ## Scripts npm disponibles
 
@@ -114,18 +106,71 @@ Este comando ejecutará todas las pruebas y generará un informe de cobertura en
 
 Para más información sobre cómo configurar o extender las pruebas, consulta la documentación oficial de Jest o revisa los archivos en la carpeta `__tests__` del proyecto.
 
-## Contribuciones
+## Cómo colaborar en el proyecto
 
-Las contribuciones son bienvenidas. Si deseas colaborar:
+¡Gracias por tu interés en contribuir! Este proyecto utiliza [Git](https://git-scm.com/) para el control de versiones y [GitHub](https://github.com/) para coordinar las colaboraciones. Sigue estos pasos para participar:
 
-1. Haz un fork del repositorio.
-2. Crea una rama con el nombre de tu función o corrección.
-3. Envía un pull request con una descripción detallada.
+### 1. Clona el repositorio
+Primero, necesitas una copia local del proyecto. Si no tienes Git instalado, [descárgalo aquí](https://git-scm.com/).
 
-## Licencia
+```bash
+git clone https://github.com/madkoding/mmorpgvt.git
+```
 
-Este proyecto está bajo la licencia MIT. Consulta el archivo `LICENSE` para más detalles.
+Esto creará una carpeta llamada `mmorpgvt` en tu máquina.
+
+### 2. Crea una rama para tu contribución
+Nunca trabajes directamente en la rama principal (`main`). Crea una nueva rama con un nombre descriptivo que indique los cambios que harás:
+
+```bash
+git checkout -b nombre-de-mi-rama
+```
+
+Por ejemplo:
+
+```bash
+git checkout -b agregar-documentacion
+```
+
+### 3. Haz tus cambios
+Realiza los cambios necesarios en el código o la documentación. Asegúrate de seguir las guías de estilo del proyecto.
+
+### 4. Confirma tus cambios
+Una vez que hayas terminado, guarda un registro de los cambios realizados:
+
+```bash
+git add .
+git commit -m "Descripción breve de los cambios realizados"
+```
+
+Por ejemplo:
+
+```bash
+git commit -m "Añadí documentación para contribuir con Git"
+```
+
+### 5. Sincroniza con el repositorio remoto
+Antes de enviar tus cambios, sincroniza tu copia local con la versión más reciente del repositorio principal:
+
+```bash
+git fetch origin
+git merge origin/main
+```
+
+### 6. Envía tus cambios a GitHub
+Envía tu rama al repositorio remoto para que otros puedan revisarla:
+
+```bash
+git push origin nombre-de-mi-rama
+```
+
+### 7. Crea un Pull Request
+Ve al repositorio en GitHub y crea un "Pull Request" desde tu rama. Describe los cambios que realizaste y qué problema resuelve tu contribución.
+
+### 8. Revisión y ajustes
+Un miembro del equipo revisará tu Pull Request. Si es necesario, realiza los ajustes que se te soliciten y sigue trabajando en tu rama. Los nuevos cambios se añadirán automáticamente a tu Pull Request.
 
 ---
-Gracias por ser parte de MMORPGVT. ¡Esperamos tus ideas y sugerencias para hacer este proyecto aún más asombroso!
+
+Si tienes preguntas o dudas, utiliza la sección de [Issues](https://github.com/madkoding/mmorpgvt/issues) para comunicarte.
 
