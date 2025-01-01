@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Press+Start+2P&family=Russo+One&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply bg-black text-white;
+}
+
+@layer utilities {
+    .shake-effect {
+        animation: shake 0.5s ease-in-out, shake-color 1s ease-in-out;
+    }
+
+    @keyframes shake {
+        0% {
+            transform: translateX(0);
+        }
+
+        25% {
+            transform: translateX(-5px);
+        }
+
+        50% {
+            transform: translateX(5px);
+        }
+
+        75% {
+            transform: translateX(-5px);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes shake-color {
+
+        0%,
+        100% {
+            background-color: transparent;
+        }
+
+        50% {
+            background-color: rgba(220, 38, 38, 0.8);
+        }
+
+        /* Rojo translúcido */
+    }
+
+    .jump-effect {
+        animation: jump 1s ease-in-out, jump-color 1s ease-in-out;
+    }
+
+    @keyframes jump {
+
+        0%,
+        100% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(-20px);
+        }
+    }
+
+    @keyframes jump-color {
+
+        0%,
+        100% {
+            background-color: transparent;
+        }
+
+        50% {
+            background-color: rgba(34, 197, 94, 0.8);
+        }
+
+        /* Verde translúcido */
+    }
+
+}
