@@ -1,21 +1,37 @@
 # Security Policy
 
-## Supported Versions
+## Versiones Soportadas
 
-Use this section to tell people about which versions of your project are
-currently being supported with security updates.
+| Versión | Soporte |
+|---------|---------|
+| 1.x.x   | ✅ Activa |
+| 0.x.x   | ⚠️ Legacy |
 
-| Version | Supported          |
-| ------- | ------------------ |
-| 5.1.x   | :white_check_mark: |
-| 5.0.x   | :x:                |
-| 4.0.x   | :white_check_mark: |
-| < 4.0   | :x:                |
+## Reportar Vulnerabilidades
 
-## Reporting a Vulnerability
+Si descubres una vulnerabilidad de seguridad, por favor:
 
-Use this section to tell people how to report a vulnerability.
+1. **NO** crees un issue público
+2. Envía un email a: [tu-email@ejemplo.com]
+3. Include:
+   - Descripción de la vulnerabilidad
+   - Pasos para reproducir
+   - Impacto potencial
+   - Sugerencias de fix (si las hay)
 
-Tell them where to go, how often they can expect to get an update on a
-reported vulnerability, what to expect if the vulnerability is accepted or
-declined, etc.
+## Timeline de Respuesta
+
+- **Acknowledge**: 24-48 horas
+- **Estimación**: 1 semana
+- **Fix**: Según severidad
+
+## Severidad
+
+- **Crítica**: Fix en 24-48 horas
+- **Alta**: Fix en 1 semana
+- **Media**: Fix en 2 semanas
+- **Baja**: Fix en 1 mes
+
+## Actualizaciones
+
+Las actualizaciones de seguridad serán announceadas en el changelog.
