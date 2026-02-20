@@ -19,7 +19,7 @@
     "autoprefixer": "^10.4.20",
     "chart.js": "^4.4.6",
     "classnames": "^2.5.1",
-    "firebase": "^11.0.2",
+    "firebase": "^12.9.0",
     "next": "15.0.7",
     "postcss": "^8.4.49",
     "prop-types": "^15.8.1",
