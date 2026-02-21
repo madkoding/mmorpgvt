@@ -1,5 +1,7 @@
 # MMORPGVT Project
 
+[![Version](https://img.shields.io/github/v/release/madkoding/mmorpgvt?logo=github)](https://github.com/madkoding/mmorpgvt/releases) [![CI](https://img.shields.io/github/actions/workflow/status/madkoding/mmorpgvt/ci.yml?logo=github&label=CI)](https://github.com/madkoding/mmorpgvt/actions) [![TypeScript](https://img.shields.io/badge/TypeScript-5.0+-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org)
+
 ## Descripción
 
 **MMORPGVT** es un proyecto que combina elementos de juegos de rol multijugador masivos en línea (MMORPG) con integraciones personalizadas para VTubers. Proporciona herramientas y funciones para enriquecer la experiencia de streaming con mecánicas de juego y características interactivas.
@@ -175,4 +177,4 @@ Un miembro del equipo revisará tu Pull Request. Si es necesario, realiza los aj
 Si tienes preguntas o dudas, utiliza la sección de [Issues](https://github.com/madkoding/mmorpgvt/issues) para comunicarte.
 
 <!-- AUTO-UPDATE-DATE -->
-**Última actualización:** 2026-02-20 20:08:50 -03
+**Última actualización:** 2026-02-21 12:06:41 -03
