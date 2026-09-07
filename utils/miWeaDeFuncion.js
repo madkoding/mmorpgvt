@@ -1,4 +1,4 @@
 export function miWeaDeFuncion(numero) {
-	const resultado = numero + numero;
-	return resultado;
+  const resultado = numero + numero;
+  return resultado;
 }

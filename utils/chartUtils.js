@@ -1,6 +1,9 @@
 import Chart from "chart.js/auto";
 
-export function initializeChart(canvas, { resistencia, carisma, creatividad, actitud, primary, textPrimary }) {
+export function initializeChart(
+  canvas,
+  { resistencia, carisma, creatividad, actitud, primary, textPrimary },
+) {
   return new Chart(canvas, {
     type: "radar",
     data: {
