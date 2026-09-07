@@ -5,10 +5,14 @@ export async function getCharacterData(characterId) {
   return new Promise((resolve, reject) => {
     const db = getDatabase(firebaseApp);
     const characterRef = ref(db, `characters/${characterId}`);
-    onValue(characterRef, (snapshot) => {
-      const data = snapshot.val();
-      resolve(data);
-    }, reject);
+    onValue(
+      characterRef,
+      (snapshot) => {
+        const data = snapshot.val();
+        resolve(data);
+      },
+      reject,
+    );
   });
 }
 

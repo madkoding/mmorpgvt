@@ -15,8 +15,6 @@ export default function LoginPage() {
   const [error, setError] = useState(null);
   const [isLoading, setIsLoading] = useState(true); // Estado de carga general
   const router = useRouter();
-  const auth = getAuth(firebaseApp);
-  const db = getDatabase(firebaseApp);
 
   /**
    * Verifica el estado del usuario y redirige según corresponda.
@@ -26,6 +24,7 @@ export default function LoginPage() {
     if (!user) return;
 
     try {
+      const db = getDatabase(firebaseApp);
       const userRef = ref(db, `users/${user.uid}`);
       const snapshot = await get(userRef);
 
@@ -48,6 +47,7 @@ export default function LoginPage() {
 
   // Usar `onAuthStateChanged` para detectar cambios en el estado de autenticación
   useEffect(() => {
+    const auth = getAuth(firebaseApp);
     const unsubscribe = onAuthStateChanged(auth, async (user) => {
       if (user) {
         await handleUserRedirect(user); // Redirigir si el usuario está autenticado
@@ -57,7 +57,7 @@ export default function LoginPage() {
     });
 
     return () => unsubscribe(); // Limpiar el listener al desmontar
-  }, [auth]);
+  }, []);
 
   const handleGoogleLogin = async () => {
     setError(null); // Limpiar errores previos
@@ -66,6 +66,7 @@ export default function LoginPage() {
     const provider = new GoogleAuthProvider();
 
     try {
+      const auth = getAuth(firebaseApp);
       const result = await signInWithPopup(auth, provider);
       const { user } = result;
       await handleUserRedirect(user); // Reutilizar lógica de redirección
