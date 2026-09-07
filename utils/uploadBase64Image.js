@@ -8,14 +8,18 @@ import { getDatabase, ref, set } from "firebase/database";
  */
 export async function uploadBase64Image(characterName, imageBase64) {
   if (!characterName || !imageBase64) {
-    throw new Error("Se requiere el nombre del personaje y la imagen en Base64.");
+    throw new Error(
+      "Se requiere el nombre del personaje y la imagen en Base64.",
+    );
   }
 
   try {
     const db = getDatabase();
     const imageRef = ref(db, `characters/${characterName}/imageBase64`);
     await set(imageRef, imageBase64);
-    console.log(`Imagen subida correctamente para el personaje ${characterName}.`);
+    console.log(
+      `Imagen subida correctamente para el personaje ${characterName}.`,
+    );
   } catch (error) {
     console.error("Error al subir la imagen a Firebase:", error);
     throw error;
