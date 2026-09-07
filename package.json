@@ -30,7 +30,7 @@
   "devDependencies": {
     "@babel/core": "^7.29.6",
     "@babel/preset-env": "^7.26.0",
-    "@babel/preset-react": "^7.26.3",
+    "@babel/preset-react": "^8.0.1",
     "@tailwindcss/postcss": "^4.2.0",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.1.0",
