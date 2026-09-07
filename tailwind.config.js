@@ -4,9 +4,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        exo: ['"Exo 2"', 'sans-serif'], // Exo 2
-        russo: ['"Russo One"', 'sans-serif'], // Russo One
-        pixel: ['"Press Start 2P"', 'sans-serif'], // Press Start 2P
+        exo: ['"Exo 2"', "sans-serif"], // Exo 2
+        russo: ['"Russo One"', "sans-serif"], // Russo One
+        pixel: ['"Press Start 2P"', "sans-serif"], // Press Start 2P
       },
       animation: {
         cardFlip: "cardFlip 2s cubic-bezier(0.25, 1, 0.5, 1) forwards",
