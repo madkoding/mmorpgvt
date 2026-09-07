@@ -1,6 +1,6 @@
 /**
  * Firebase configuration file for Next.js.
- * 
+ *
  * This file uses environment variables to keep sensitive data secure.
  * Make sure to configure these variables in your `.env.local` file
  * for local development and in your hosting provider for production.
@@ -25,4 +25,5 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
+export const firebaseApp = app;
 export default app;
