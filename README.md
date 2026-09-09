@@ -178,3 +178,6 @@ Si tienes preguntas o dudas, utiliza la sección de [Issues](https://github.com/
 
 <!-- AUTO-UPDATE-DATE -->
 **Última actualización:** 2026-02-26 15:51:10 -03
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=madkoding/mmorpgvt&type=Date)](https://star-history.com/#madkoding/mmorpgvt&Date)
