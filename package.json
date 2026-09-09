@@ -28,7 +28,7 @@
     "tailwindcss": "^4.2.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.29.6",
+    "@babel/core": "^8.0.1",
     "@babel/preset-env": "^7.26.0",
     "@babel/preset-react": "^7.26.3",
     "@tailwindcss/postcss": "^4.2.0",
